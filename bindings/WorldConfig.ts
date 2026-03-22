@@ -25,6 +25,10 @@ speed: number | null,
  */
 ticks: number | null, 
 /**
+ * amount of ticks after which a cell will automatically reset
+ */
+decay: number | null, 
+/**
  * amount of ms to sleep for after end of simulation, i.e. between loops
  */
 sleep: number | null, 
