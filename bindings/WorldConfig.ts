@@ -13,10 +13,6 @@ width: number,
  */
 height: number, 
 /**
- * rendered frames per second
- */
-fps: number | null, 
-/**
  * simulated ticks per frame (defaults to 1)
  */
 speed: number | null, 
@@ -28,10 +24,6 @@ ticks: number | null,
  * amount of ticks after which a cell will automatically reset
  */
 decay: number | null, 
-/**
- * amount of ms to sleep for after end of simulation, i.e. between loops
- */
-sleep: number | null, 
 /**
  * re-run simulation after it ends
  */
@@ -47,4 +39,21 @@ starting_pos: StartingPos,
 /**
  * max number of ants before additional spawning gets blocked
  */
-ant_limit: number | null, color_mode: ColorMode, noise_seed: number | null, hide_title: boolean, description: string, };
+ant_limit: number | null, color_mode: ColorMode, noise_seed: number | null, hide_title: boolean, description: string, 
+/**
+ * rendered frames per second
+ */
+fps: number | null, 
+/**
+ * amount of ms to sleep for after end of simulation, i.e. between loops
+ */
+sleep: number | null, 
+/**
+ * 16 ASCII characters to render cells, start is value = 0
+ * can  also set to empty string to get a default ASCII palette
+ */
+ascii: string | null, 
+/**
+ * 1 to 8 characters as key bindings, representing K0-K7 in ascending order
+ */
+keys: string | null, };
