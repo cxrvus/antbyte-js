@@ -1,6 +1,6 @@
 // @ts-check
-/** @typedef {import("../js/lib").Behavior} Behavior */
-/** @typedef {import("../js/lib").World} World */
+/** @typedef {import("./lib").Behavior} Behavior */
+/** @typedef {import("./lib").World} World */
 
 import * as util from './util.mjs'
 
