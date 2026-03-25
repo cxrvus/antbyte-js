@@ -39,11 +39,19 @@ starting_pos: StartingPos,
 /**
  * max number of ants before additional spawning gets blocked
  */
-ant_limit: number | null, color_mode: ColorMode, noise_seed: number | null, hide_title: boolean, description: string, 
+ant_limit: number | null, color_mode: ColorMode, noise_seed: number | null, description: string, 
 /**
  * rendered frames per second
  */
 fps: number | null, 
+/**
+ * don't render title banner
+ */
+hide_title: boolean, 
+/**
+ * don't render ants
+ */
+hide_ants: boolean, 
 /**
  * amount of ms to sleep for after end of simulation, i.e. between loops
  */
