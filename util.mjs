@@ -78,9 +78,9 @@ export const or = (...params) => !params.every(x => !x)
 export const inv = (...params) => params.map(x => !x)
 
 
-// manually created event spec
+// manually created pins
 
-export const events = {
+export const PINS = {
 	input: [
 		"AC",
 		"C0", "C1", "C2", "C3",

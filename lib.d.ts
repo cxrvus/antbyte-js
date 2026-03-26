@@ -3,8 +3,8 @@
 export type { Behavior as BehaviorJSON } from "./bindings/Behavior";
 export type { BorderMode } from "./bindings/BorderMode";
 export type { ColorMode } from "./bindings/ColorMode";
-export type { Event } from "./bindings/Event";
-export type { EventBit } from "./bindings/EventBit";
+export type { Pin } from "./bindings/Pin";
+export type { SubPin } from "./bindings/SubPin";
 export type { StartingPos } from "./bindings/StartingPos";
 export type { TruthTable } from "./bindings/TruthTable";
 export type { WorldProperties } from "./bindings/WorldProperties";
