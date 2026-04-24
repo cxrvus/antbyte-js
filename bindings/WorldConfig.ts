@@ -39,15 +39,11 @@ start_pos: StartingPos, start_dir: number,
 /**
  * max number of ants before additional spawning gets blocked
  */
-ant_limit: number | null, color_mode: ColorMode, noise_seed: number | null, description: string, 
+ant_limit: number | null, noise_seed: number | null, description: string, 
 /**
  * rendered frames per second
  */
 fps: number | null, 
-/**
- * don't render title banner
- */
-hide_title: boolean, 
 /**
  * don't render ants
  */
@@ -58,9 +54,13 @@ hide_ants: boolean,
 sleep: number | null, 
 /**
  * 16 ASCII characters to render cells, start is value = 0
- * can  also set to empty string to get a default ASCII palette
+ * can also set to empty string to get a default ASCII palette
  */
 ascii: string | null, 
+/**
+ * changes how colors are rendered
+ */
+color_mode: ColorMode, 
 /**
  * 1 to 8 characters as key bindings, representing K0-K7 in ascending order
  */
