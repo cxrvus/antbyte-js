@@ -35,7 +35,15 @@ border_mode: BorderMode,
 /**
  * position of the first ant
  */
-start_pos: StartingPos, start_dir: number, 
+start_pos: StartingPos, 
+/**
+ * first tick to render
+ */
+start_tick: number, 
+/**
+ * direction value (0-7) for start ant
+ */
+start_dir: number, 
 /**
  * max number of ants before additional spawning gets blocked
  */
