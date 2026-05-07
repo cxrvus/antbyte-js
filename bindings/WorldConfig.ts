@@ -19,7 +19,7 @@ speed: number | null,
 /**
  * simulation tick limit
  */
-ticks: number | null, 
+max_ticks: number | null, 
 /**
  * amount of ticks after which a cell will automatically reset
  */
