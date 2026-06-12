@@ -32,7 +32,7 @@ looping: boolean,
 /**
  * behavior if ants touch the worlds border
  */
-border_mode: BorderMode, 
+border: BorderMode, 
 /**
  * position of the first ant
  */
@@ -48,7 +48,7 @@ start_dir: number,
 /**
  * max number of ants before additional spawning gets blocked
  */
-ant_limit: number | null, noise_seed: number | null, description: string, 
+ant_limit: number | null, seed: number | null, description: string, 
 /**
  * rendered frames per second
  */
