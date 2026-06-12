@@ -80,27 +80,149 @@ export const inv = (...params) => params.map(x => !x)
 
 // manually created pins
 
-export const PINS = {
-	input: [
-		"AC",
-		"C0", "C1", "C2", "C3",
-		"CN0", "CN1", "CN2", "CN3",
-		"T0", "T1", "T2", "T3", "T4", "T5", "T6", "T7",
-		"TT0", "TT1", "TT2", "TT3", "TT4", "TT5", "TT6", "TT7",
-		"R0", "R1", "R2", "R3", "R4", "R5", "R6", "R7",
-		"RR0", "RR1", "RR2", "RR3", "RR4", "RR5", "RR6", "RR7",
-		"M0", "M1", "M2", "M3", "M4", "M5", "M6", "M7",
-		"K0", "K1", "K2", "K3", "K4", "K5", "K6", "K7",
-		"S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7",
-	],
-
-	output: [
-		"CC",
-		"C0", "C1", "C2", "C3",
-		"M0", "M1", "M2", "M3", "M4", "M5", "M6", "M7",
-		"D0", "D1", "D2", "DX",
-		"A0", "A1", "A2", "A3", "A4", "A5", "A6", "A7",
-		"S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7",
-		"AK", "AX",
-	],
-}
+export const PINS = [
+  {
+    "pin": "SpawnId",
+    "code": "A",
+    "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "SpawnDir",
+    "code": "AD",
+    "size": 3,
+    "io_type": "Output"
+  },
+  {
+    "pin": "SpawnMem",
+    "code": "AM",
+    "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Cell",
+    "code": "C",
+    "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "Clear",
+    "code": "CC",
+    "size": 1,
+    "io_type": null
+  },
+  {
+    "pin": "Dir",
+    "code": "D",
+    "size": 3,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Dash",
+    "code": "DD",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Halt",
+    "code": "H",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Init",
+    "code": "J",
+    "size": 1,
+    "io_type": "Input"
+  },
+  {
+    "pin": "ExtIn",
+    "code": "K",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Mem",
+    "code": "M",
+    "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "Random",
+    "code": "R",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Chance",
+    "code": "RR",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Signal",
+    "code": "S",
+    "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "Time",
+    "code": "T",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Pulse",
+    "code": "TT",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "NearbyAnt",
+    "code": "V",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "NearbyId",
+    "code": "VA",
+    "size": 64,
+    "io_type": "Input"
+  },
+  {
+    "pin": "NearbyCell",
+    "code": "VC",
+    "size": 64,
+    "io_type": "Input"
+  },
+  {
+    "pin": "NearbyMem",
+    "code": "VM",
+    "size": 64,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Wait",
+    "code": "W",
+    "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "ExtOut",
+    "code": "X",
+    "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Die",
+    "code": "Z",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
+    "pin": "Kill",
+    "code": "ZZ",
+    "size": 1,
+    "io_type": "Output"
+  }
+];
