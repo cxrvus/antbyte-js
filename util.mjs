@@ -88,6 +88,12 @@ export const PINS = [
     "io_type": "Output"
   },
   {
+    "pin": "SpawnLayer",
+    "code": "AA",
+    "size": 3,
+    "io_type": "Output"
+  },
+  {
     "pin": "SpawnDir",
     "code": "AD",
     "size": 3,

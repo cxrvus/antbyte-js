@@ -14,6 +14,14 @@ width: number,
  */
 height: number, 
 /**
+ * number of ant layers
+ */
+layers: number, 
+/**
+ * layer that will be rendered
+ */
+main_layer: number, 
+/**
  * simulated ticks per frame (defaults to 1)
  */
 speed: number | null, 
@@ -32,7 +40,7 @@ looping: boolean,
 /**
  * behavior if ants touch the worlds border
  */
-border: BorderMode, 
+border: { [key in number]: BorderMode }, 
 /**
  * position of the first ant
  */
@@ -48,7 +56,7 @@ start_dir: number,
 /**
  * max number of ants before additional spawning gets blocked
  */
-ant_limit: number | null, seed: number | null, description: string, 
+ant_limit: number, seed: number | null, description: string, 
 /**
  * rendered frames per second
  */
