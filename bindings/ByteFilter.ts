@@ -3,4 +3,4 @@
 /**
  * filter specified nibble from a byte
  */
-export type ByteFilter = "Lsb" | "Msb" | "Bin";
+export type ByteFilter = "lsb" | "msb" | "bin";
