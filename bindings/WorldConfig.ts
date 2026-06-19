@@ -30,7 +30,7 @@ speed: number | null,
  */
 max_ticks: number | null, 
 /**
- * amount of ticks after which a cell will automatically reset
+ * amount of ticks after which a tile will automatically reset
  */
 decay: number | null, 
 /**
