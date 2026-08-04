@@ -19,9 +19,9 @@ height: number,
  */
 layers: number, 
 /**
- * layer that will be rendered
+ * filter for layers that will be rendered
  */
-main_layer: number, 
+layer_filter: number, 
 /**
  * simulated ticks per frame (defaults to 1)
  */
@@ -42,6 +42,10 @@ looping: boolean,
  * behavior if ants touch the worlds border
  */
 border: { [key in number]: BorderMode }, 
+/**
+ * counter-clockwise instead of clockwise rotation
+ */
+rot_left: boolean, 
 /**
  * position of the first ant
  */

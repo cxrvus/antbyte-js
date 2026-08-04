@@ -4,4 +4,4 @@ export type MidiConfig = {
 /**
  * set channel to 1-16 or set to 0 to ignore
  */
-out_ch: number, offset: number, };
+out_ch: { [key in number]: number }, offset: { [key in number]: number }, };
