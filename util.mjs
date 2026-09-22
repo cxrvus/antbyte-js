@@ -94,38 +94,38 @@ export const PINS = [
     "io_type": "Output"
   },
   {
-    "pin": "SpawnDir",
-    "code": "AD",
-    "size": 3,
-    "io_type": "Output"
-  },
-  {
     "pin": "SpawnMem",
     "code": "AM",
     "size": 8,
     "io_type": "Output"
   },
   {
-    "pin": "Cell",
-    "code": "C",
-    "size": 8,
-    "io_type": null
-  },
-  {
-    "pin": "Clear",
-    "code": "CC",
-    "size": 1,
-    "io_type": null
-  },
-  {
-    "pin": "Dir",
-    "code": "D",
+    "pin": "SpawnRotation",
+    "code": "AR",
     "size": 3,
     "io_type": "Output"
   },
   {
-    "pin": "Dash",
-    "code": "DD",
+    "pin": "BirthTick",
+    "code": "B",
+    "size": 1,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Counter",
+    "code": "C",
+    "size": 16,
+    "io_type": "Input"
+  },
+  {
+    "pin": "EmptyTile",
+    "code": "E",
+    "size": 1,
+    "io_type": null
+  },
+  {
+    "pin": "Fast",
+    "code": "F",
     "size": 1,
     "io_type": "Output"
   },
@@ -136,16 +136,10 @@ export const PINS = [
     "io_type": "Output"
   },
   {
-    "pin": "Init",
-    "code": "J",
-    "size": 1,
-    "io_type": "Input"
-  },
-  {
-    "pin": "ExtIn",
+    "pin": "Kill",
     "code": "K",
-    "size": 8,
-    "io_type": "Input"
+    "size": 1,
+    "io_type": "Output"
   },
   {
     "pin": "Mem",
@@ -154,16 +148,16 @@ export const PINS = [
     "io_type": null
   },
   {
-    "pin": "Random",
-    "code": "R",
-    "size": 8,
+    "pin": "Noise",
+    "code": "N",
+    "size": 16,
     "io_type": "Input"
   },
   {
-    "pin": "Chance",
-    "code": "RR",
-    "size": 8,
-    "io_type": "Input"
+    "pin": "Rotation",
+    "code": "R",
+    "size": 3,
+    "io_type": "Output"
   },
   {
     "pin": "Signal",
@@ -172,16 +166,10 @@ export const PINS = [
     "io_type": null
   },
   {
-    "pin": "Time",
+    "pin": "Tile",
     "code": "T",
     "size": 8,
-    "io_type": "Input"
-  },
-  {
-    "pin": "Pulse",
-    "code": "TT",
-    "size": 8,
-    "io_type": "Input"
+    "io_type": null
   },
   {
     "pin": "NearbyAnt",
@@ -196,8 +184,8 @@ export const PINS = [
     "io_type": "Input"
   },
   {
-    "pin": "NearbyCell",
-    "code": "VC",
+    "pin": "NearbyTile",
+    "code": "VT",
     "size": 64,
     "io_type": "Input"
   },
@@ -214,20 +202,20 @@ export const PINS = [
     "io_type": "Output"
   },
   {
-    "pin": "ExtOut",
+    "pin": "ExtIn",
     "code": "X",
-    "size": 8,
+    "size": 16,
+    "io_type": "Input"
+  },
+  {
+    "pin": "ExtOut",
+    "code": "Y",
+    "size": 16,
     "io_type": "Output"
   },
   {
     "pin": "Die",
     "code": "Z",
-    "size": 1,
-    "io_type": "Output"
-  },
-  {
-    "pin": "Kill",
-    "code": "ZZ",
     "size": 1,
     "io_type": "Output"
   }

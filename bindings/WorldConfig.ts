@@ -83,6 +83,6 @@ fg: RenderMask,
  */
 sleep: number | null, 
 /**
- * 1 to 8 characters as key bindings, representing K0-K7 in ascending order
+ * 1 to 8 characters as key bindings, representing X0-X7 in ascending order
  */
 keys: string | null, midi: MidiConfig, };
