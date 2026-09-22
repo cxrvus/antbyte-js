@@ -118,16 +118,16 @@ export const PINS = [
     "io_type": "Input"
   },
   {
+    "pin": "Die",
+    "code": "D",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
     "pin": "EmptyTile",
     "code": "E",
     "size": 1,
     "io_type": null
-  },
-  {
-    "pin": "Fast",
-    "code": "F",
-    "size": 1,
-    "io_type": "Output"
   },
   {
     "pin": "Halt",
@@ -172,6 +172,12 @@ export const PINS = [
     "io_type": null
   },
   {
+    "pin": "TieBreaker",
+    "code": "TB",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
     "pin": "NearbyAnt",
     "code": "V",
     "size": 8,
@@ -211,12 +217,6 @@ export const PINS = [
     "pin": "ExtOut",
     "code": "Y",
     "size": 16,
-    "io_type": "Output"
-  },
-  {
-    "pin": "Die",
-    "code": "D",
-    "size": 1,
     "io_type": "Output"
   }
 ];
