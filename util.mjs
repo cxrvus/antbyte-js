@@ -215,7 +215,7 @@ export const PINS = [
   },
   {
     "pin": "Die",
-    "code": "Z",
+    "code": "D",
     "size": 1,
     "io_type": "Output"
   }
