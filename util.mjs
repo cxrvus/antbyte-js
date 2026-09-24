@@ -85,7 +85,7 @@ export const PINS = [
     "pin": "SpawnId",
     "code": "A",
     "size": 8,
-    "io_type": "Output"
+    "io_type": null
   },
   {
     "pin": "SpawnLayer",
@@ -133,7 +133,7 @@ export const PINS = [
     "pin": "Halt",
     "code": "H",
     "size": 1,
-    "io_type": "Output"
+    "io_type": null,
   },
   {
     "pin": "Kill",
