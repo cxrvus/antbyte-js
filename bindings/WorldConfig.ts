@@ -15,9 +15,9 @@ width: number,
  */
 height: number, 
 /**
- * number of ant layers
+ * max number of ant layers
  */
-layers: number, 
+layer_limit: number, 
 /**
  * filter for layers that will be rendered
  */
@@ -43,9 +43,13 @@ looping: boolean,
  */
 border: { [key in number]: BorderMode }, 
 /**
+ * only tick layer every n ticks
+ */
+slow_down: { [key in number]: number }, 
+/**
  * counter-clockwise instead of clockwise rotation
  */
-rot_left: boolean, 
+inv_rot: boolean, 
 /**
  * position of the first ant
  */

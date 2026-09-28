@@ -82,27 +82,33 @@ export const inv = (...params) => params.map(x => !x)
 
 export const PINS = [
   {
-    "pin": "SpawnId",
+    "pin": "AntId",
     "code": "A",
     "size": 8,
     "io_type": null
   },
   {
-    "pin": "SpawnLayer",
+    "pin": "ChildLayer",
     "code": "AA",
     "size": 3,
     "io_type": "Output"
   },
   {
-    "pin": "SpawnMem",
+    "pin": "ChildLeft",
+    "code": "AL",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
+    "pin": "ChildMem",
     "code": "AM",
     "size": 8,
     "io_type": "Output"
   },
   {
-    "pin": "SpawnRotation",
+    "pin": "ChildRotation",
     "code": "AR",
-    "size": 3,
+    "size": 8,
     "io_type": "Output"
   },
   {
@@ -114,7 +120,7 @@ export const PINS = [
   {
     "pin": "Counter",
     "code": "C",
-    "size": 16,
+    "size": 8,
     "io_type": "Input"
   },
   {
@@ -124,20 +130,26 @@ export const PINS = [
     "io_type": "Output"
   },
   {
-    "pin": "EmptyTile",
+    "pin": "Clock",
     "code": "E",
-    "size": 1,
-    "io_type": null
+    "size": 8,
+    "io_type": "Input"
   },
   {
     "pin": "Halt",
     "code": "H",
     "size": 1,
-    "io_type": null,
+    "io_type": null
   },
   {
     "pin": "Kill",
     "code": "K",
+    "size": 1,
+    "io_type": "Output"
+  },
+  {
+    "pin": "RotateLeft",
+    "code": "L",
     "size": 1,
     "io_type": "Output"
   },
@@ -150,14 +162,20 @@ export const PINS = [
   {
     "pin": "Noise",
     "code": "N",
-    "size": 16,
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Probability",
+    "code": "P",
+    "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "Rotation",
     "code": "R",
-    "size": 3,
-    "io_type": "Output"
+    "size": 8,
+    "io_type": null
   },
   {
     "pin": "Signal",
@@ -169,6 +187,12 @@ export const PINS = [
     "pin": "Tile",
     "code": "T",
     "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "EmptyTile",
+    "code": "TZ",
+    "size": 1,
     "io_type": null
   },
   {
@@ -218,5 +242,12 @@ export const PINS = [
     "code": "Y",
     "size": 16,
     "io_type": "Output"
+  },
+  {
+    "pin": "RotateZero",
+    "code": "Z",
+    "size": 1,
+    "io_type": null
   }
 ];
+
