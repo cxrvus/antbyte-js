@@ -80,7 +80,8 @@ export const inv = (...params) => params.map(x => !x)
 
 // manually created pins
 
-export const PINS = [
+export const PINS =
+[
   {
     "pin": "AntId",
     "code": "A",
@@ -118,10 +119,16 @@ export const PINS = [
     "io_type": "Input"
   },
   {
-    "pin": "Counter",
+    "pin": "TileColor",
     "code": "C",
     "size": 8,
-    "io_type": "Input"
+    "io_type": null
+  },
+  {
+    "pin": "TileZero",
+    "code": "CZ",
+    "size": 1,
+    "io_type": null
   },
   {
     "pin": "Die",
@@ -184,16 +191,10 @@ export const PINS = [
     "io_type": null
   },
   {
-    "pin": "Tile",
+    "pin": "Counter",
     "code": "T",
     "size": 8,
-    "io_type": null
-  },
-  {
-    "pin": "EmptyTile",
-    "code": "TZ",
-    "size": 1,
-    "io_type": null
+    "io_type": "Input"
   },
   {
     "pin": "TieBreaker",
@@ -215,7 +216,7 @@ export const PINS = [
   },
   {
     "pin": "NearbyTile",
-    "code": "VT",
+    "code": "VC",
     "size": 64,
     "io_type": "Input"
   },
@@ -250,4 +251,3 @@ export const PINS = [
     "io_type": null
   }
 ];
-

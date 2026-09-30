@@ -7,6 +7,10 @@ import type { StartingPos } from "./StartingPos";
 
 export type WorldConfig = { 
 /**
+ * description
+ */
+description: string, 
+/**
  * width in pixels
  */
 width: number, 
@@ -15,33 +19,46 @@ width: number,
  */
 height: number, 
 /**
- * max number of ant layers
- */
-layer_limit: number, 
-/**
- * filter for layers that will be rendered
- */
-layer_filter: number, 
-/**
  * simulated ticks per frame (defaults to 1)
  */
 speed: number | null, 
 /**
  * simulation tick limit
+ * position of the first ant
  */
-max_ticks: number | null, 
+start_pos: StartingPos, 
 /**
- * amount of ticks after which a tile will automatically reset
+ * direction value (0-7) for start ant
  */
-decay: number | null, 
+start_dir: number, max_ticks: number | null, 
 /**
  * re-run simulation after it ends
  */
 looping: boolean, 
 /**
+ * amount of ms to sleep for after end of simulation, i.e. between loops
+ */
+sleep: number | null, 
+/**
  * behavior if ants touch the worlds border
  */
 border: { [key in number]: BorderMode }, 
+/**
+ * amount of ticks after which a tile will automatically reset
+ */
+decay: number | null, 
+/**
+ * max number of ants before additional spawning gets blocked
+ */
+ant_limit: number, 
+/**
+ * max number of ant layers
+ */
+layer_limit: number, 
+/**
+ * use Euclidean distances (don't normalize diagonal movement)
+ */
+euclid: boolean, 
 /**
  * only tick layer every n ticks
  */
@@ -51,25 +68,21 @@ slow_down: { [key in number]: number },
  */
 inv_rot: boolean, 
 /**
- * position of the first ant
+ * seed for random values
  */
-start_pos: StartingPos, 
+seed: number | null, 
+/**
+ * rendered frames per second
+ */
+fps: number | null, 
 /**
  * first tick to render
  */
 start_tick: number, 
 /**
- * direction value (0-7) for start ant
+ * filter for layers that will be rendered
  */
-start_dir: number, 
-/**
- * max number of ants before additional spawning gets blocked
- */
-ant_limit: number, seed: number | null, description: string, 
-/**
- * rendered frames per second
- */
-fps: number | null, 
+layer_filter: number, 
 /**
  * filter to get desired nibble (4 bits) out of BG byte
  */
@@ -82,10 +95,6 @@ bg: RenderMask,
  * foreground render mask
  */
 fg: RenderMask, 
-/**
- * amount of ms to sleep for after end of simulation, i.e. between loops
- */
-sleep: number | null, 
 /**
  * 1 to 8 characters as key bindings, representing X0-X7 in ascending order
  */
