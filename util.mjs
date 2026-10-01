@@ -95,15 +95,15 @@ export const PINS =
     "io_type": "Output"
   },
   {
-    "pin": "ChildLeft",
-    "code": "A_LFT",
-    "size": 1,
-    "io_type": "Output"
-  },
-  {
     "pin": "ChildMem",
     "code": "A_MEM",
     "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "ChildLeft",
+    "code": "A_LFT",
+    "size": 1,
     "io_type": "Output"
   },
   {
@@ -113,22 +113,28 @@ export const PINS =
     "io_type": "Output"
   },
   {
-    "pin": "BirthTick",
-    "code": "INL",
-    "size": 1,
+    "pin": "Clock",
+    "code": "CLK",
+    "size": 8,
     "io_type": "Input"
   },
   {
-    "pin": "TileColor",
+    "pin": "Clear",
+    "code": "CLR",
+    "size": 1,
+    "io_type": null
+  },
+  {
+    "pin": "Color",
     "code": "COL",
     "size": 8,
     "io_type": null
   },
   {
-    "pin": "TileZero",
-    "code": "CLR",
-    "size": 1,
-    "io_type": null
+    "pin": "Counter",
+    "code": "CTR",
+    "size": 8,
+    "io_type": "Input"
   },
   {
     "pin": "Die",
@@ -137,16 +143,16 @@ export const PINS =
     "io_type": "Output"
   },
   {
-    "pin": "Clock",
-    "code": "EVR",
-    "size": 8,
-    "io_type": "Input"
-  },
-  {
     "pin": "Halt",
     "code": "HLT",
     "size": 1,
     "io_type": null
+  },
+  {
+    "pin": "Initial",
+    "code": "INL",
+    "size": 1,
+    "io_type": "Input"
   },
   {
     "pin": "Kill",
@@ -167,56 +173,14 @@ export const PINS =
     "io_type": null
   },
   {
-    "pin": "Noise",
-    "code": "RND",
-    "size": 8,
-    "io_type": "Input"
-  },
-  {
-    "pin": "Probability",
-    "code": "PRB",
-    "size": 8,
-    "io_type": "Input"
-  },
-  {
-    "pin": "Rotation",
-    "code": "ROT",
-    "size": 8,
-    "io_type": null
-  },
-  {
-    "pin": "Signal",
-    "code": "SIG",
-    "size": 8,
-    "io_type": null
-  },
-  {
-    "pin": "Counter",
-    "code": "CTR",
-    "size": 8,
-    "io_type": "Input"
-  },
-  {
-    "pin": "TieBreaker",
-    "code": "TBK",
-    "size": 1,
-    "io_type": "Output"
-  },
-  {
-    "pin": "NearbyAnt",
-    "code": "OBS",
-    "size": 8,
+    "pin": "NearbyColor",
+    "code": "N_COL",
+    "size": 64,
     "io_type": "Input"
   },
   {
     "pin": "NearbyId",
     "code": "N_ID",
-    "size": 64,
-    "io_type": "Input"
-  },
-  {
-    "pin": "NearbyTile",
-    "code": "N_COL",
     "size": 64,
     "io_type": "Input"
   },
@@ -227,9 +191,51 @@ export const PINS =
     "io_type": "Input"
   },
   {
-    "pin": "Wait",
+    "pin": "Obstacle",
+    "code": "OBS",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Probability",
+    "code": "PRB",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Random",
+    "code": "RND",
+    "size": 8,
+    "io_type": "Input"
+  },
+  {
+    "pin": "Rotation",
+    "code": "ROT",
+    "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "RotateReset",
+    "code": "RST",
+    "size": 1,
+    "io_type": null
+  },
+  {
+    "pin": "Signal",
+    "code": "SIG",
+    "size": 8,
+    "io_type": null
+  },
+  {
+    "pin": "Sleep",
     "code": "SLP",
     "size": 8,
+    "io_type": "Output"
+  },
+  {
+    "pin": "TieBreaker",
+    "code": "TBK",
+    "size": 1,
     "io_type": "Output"
   },
   {
@@ -243,12 +249,6 @@ export const PINS =
     "code": "X_OUT",
     "size": 16,
     "io_type": "Output"
-  },
-  {
-    "pin": "RotateZero",
-    "code": "RST",
-    "size": 1,
-    "io_type": null
   }
 ]
 
