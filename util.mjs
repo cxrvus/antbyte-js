@@ -84,170 +84,171 @@ export const PINS =
 [
   {
     "pin": "AntId",
-    "code": "A",
+    "code": "A_ID",
     "size": 8,
     "io_type": null
   },
   {
     "pin": "ChildLayer",
-    "code": "AA",
+    "code": "A_LYR",
     "size": 3,
     "io_type": "Output"
   },
   {
     "pin": "ChildLeft",
-    "code": "AL",
+    "code": "A_LFT",
     "size": 1,
     "io_type": "Output"
   },
   {
     "pin": "ChildMem",
-    "code": "AM",
+    "code": "A_MEM",
     "size": 8,
     "io_type": "Output"
   },
   {
     "pin": "ChildRotation",
-    "code": "AR",
+    "code": "A_ROT",
     "size": 8,
     "io_type": "Output"
   },
   {
     "pin": "BirthTick",
-    "code": "B",
+    "code": "INL",
     "size": 1,
     "io_type": "Input"
   },
   {
     "pin": "TileColor",
-    "code": "C",
+    "code": "COL",
     "size": 8,
     "io_type": null
   },
   {
     "pin": "TileZero",
-    "code": "CZ",
+    "code": "CLR",
     "size": 1,
     "io_type": null
   },
   {
     "pin": "Die",
-    "code": "D",
+    "code": "DIE",
     "size": 1,
     "io_type": "Output"
   },
   {
     "pin": "Clock",
-    "code": "E",
+    "code": "EVR",
     "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "Halt",
-    "code": "H",
+    "code": "HLT",
     "size": 1,
     "io_type": null
   },
   {
     "pin": "Kill",
-    "code": "K",
+    "code": "KLL",
     "size": 1,
     "io_type": "Output"
   },
   {
     "pin": "RotateLeft",
-    "code": "L",
+    "code": "LFT",
     "size": 1,
     "io_type": "Output"
   },
   {
     "pin": "Mem",
-    "code": "M",
+    "code": "MEM",
     "size": 8,
     "io_type": null
   },
   {
     "pin": "Noise",
-    "code": "N",
+    "code": "RND",
     "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "Probability",
-    "code": "P",
+    "code": "PRB",
     "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "Rotation",
-    "code": "R",
+    "code": "ROT",
     "size": 8,
     "io_type": null
   },
   {
     "pin": "Signal",
-    "code": "S",
+    "code": "SIG",
     "size": 8,
     "io_type": null
   },
   {
     "pin": "Counter",
-    "code": "T",
+    "code": "CTR",
     "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "TieBreaker",
-    "code": "TB",
+    "code": "TBK",
     "size": 1,
     "io_type": "Output"
   },
   {
     "pin": "NearbyAnt",
-    "code": "V",
+    "code": "OBS",
     "size": 8,
     "io_type": "Input"
   },
   {
     "pin": "NearbyId",
-    "code": "VA",
+    "code": "N_ID",
     "size": 64,
     "io_type": "Input"
   },
   {
     "pin": "NearbyTile",
-    "code": "VC",
+    "code": "N_COL",
     "size": 64,
     "io_type": "Input"
   },
   {
     "pin": "NearbyMem",
-    "code": "VM",
+    "code": "N_MEM",
     "size": 64,
     "io_type": "Input"
   },
   {
     "pin": "Wait",
-    "code": "W",
+    "code": "SLP",
     "size": 8,
     "io_type": "Output"
   },
   {
     "pin": "ExtIn",
-    "code": "X",
+    "code": "X_IN",
     "size": 16,
     "io_type": "Input"
   },
   {
     "pin": "ExtOut",
-    "code": "Y",
+    "code": "X_OUT",
     "size": 16,
     "io_type": "Output"
   },
   {
     "pin": "RotateZero",
-    "code": "Z",
+    "code": "RST",
     "size": 1,
     "io_type": null
   }
-];
+]
+
