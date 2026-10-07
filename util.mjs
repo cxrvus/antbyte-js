@@ -81,7 +81,7 @@ export const inv = (...params) => params.map(x => !x)
 // manually created pins
 
 export const PINS =
-[
+	[
   {
     "pin": "AntId",
     "code": "A_ID",
@@ -135,6 +135,12 @@ export const PINS =
     "code": "CTR",
     "size": 8,
     "io_type": "Input"
+  },
+  {
+    "pin": "Decay",
+    "code": "DCY",
+    "size": 16,
+    "io_type": null
   },
   {
     "pin": "Die",
@@ -250,5 +256,5 @@ export const PINS =
     "size": 16,
     "io_type": "Output"
   }
-]
+];
 
