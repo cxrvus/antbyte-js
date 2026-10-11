@@ -21,7 +21,7 @@ height: number,
 /**
  * simulated ticks per frame (defaults to 1)
  */
-speed: number | null, 
+speed: number, 
 /**
  * simulation tick limit
  * position of the first ant
@@ -74,7 +74,11 @@ seed: number | null,
 /**
  * rendered frames per second
  */
-fps: number | null, 
+fps: number, 
+/**
+ * only render new frame on key presses
+ */
+stepped: boolean, 
 /**
  * first tick to render
  */

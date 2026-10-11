@@ -86,7 +86,7 @@ export const PINS =
     "pin": "AntId",
     "code": "A_ID",
     "size": 8,
-    "io_type": null
+    "io_type": "Output"
   },
   {
     "pin": "ChildLayer",
@@ -153,6 +153,12 @@ export const PINS =
     "code": "HLT",
     "size": 1,
     "io_type": null
+  },
+    {
+    "pin": "AntId",
+    "code": "ID",
+    "size": 8,
+    "io_type": "Input"
   },
   {
     "pin": "Initial",
