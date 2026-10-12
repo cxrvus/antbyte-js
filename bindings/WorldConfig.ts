@@ -7,9 +7,9 @@ import type { StartingPos } from "./StartingPos";
 
 export type WorldConfig = { 
 /**
- * description
+ * custom string settings for 3rd-party add-ons
  */
-description: string, 
+custom: { [key in string]: string }, 
 /**
  * width in pixels
  */

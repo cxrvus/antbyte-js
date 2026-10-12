@@ -235,7 +235,7 @@ export const PINS =
   {
     "pin": "Signal",
     "code": "SIG",
-    "size": 8,
+    "size": 16,
     "io_type": null
   },
   {
